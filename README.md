@@ -8,7 +8,7 @@ Teacher Model: Qwen (better performance shown at DDK paper)
 Student Model: Qwen 2.5 Omni 7B    
   
 ### Steps needed: 
-[ ] Read the ACL paper to understand how to use Language Model on scientific tasks, and the different tasks we can potentially use for this project. 
+[ ] Read the ACL paper to understand how to use Language Model on scientific tasks, and the different tasks we can potentially use for this project.   
 [ ] Literature search: Find similar papers that used     
 - Knowledge Distillation to train student model to get language capabilities 
 - Specialist model at chemistry/material science/other kinds of scientific knowledge
