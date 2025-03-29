@@ -13,3 +13,6 @@ Student Model: Qwen 2.5 Omni 7B
 - Knowledge Distillation to train student model to get language capabilities 
 - Specialist model at chemistry/material science/other kinds of scientific knowledge
 - Pre-trained models that are successful at doing specific tasks (ex: Chemformer, MolGPT). We might need these as the student model 
+
+[ ] Student Model search   
+[ ] Teacher Model search 
