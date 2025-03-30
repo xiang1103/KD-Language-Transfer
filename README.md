@@ -37,7 +37,7 @@ The student model must possess a lot of specific domain knowledge to a specific 
 
 ### Steps needed: 
 - [x] Read the ACL paper to understand how to use Language Model on scientific tasks, and the different tasks we can potentially use for this project.   
-- [ ] Select a task to handle 
+- [x] Select a task to handle 
 - [ ] Literature search: Find similar papers that used     
     - Knowledge Distillation to train student model to get language capabilities 
     - Specialist model at chemistry/material science/other kinds of scientific knowledge
