@@ -33,8 +33,9 @@ The student model must possess a lot of specific domain knowledge to a specific 
 - Student Model: 
   
 ### Problems to Resolve: 
-- How to define language capabilitites and quantify we have improved? 
+- How to define language capabilities and quantify we have improved? 
     - Cross compare with existing LLMs like GPT with multiple rounds of conversation 
+    - Test reasoning capabilities: Chain of thought; give an answer and ask it to explain the process. 
 - How to train the student model to perform well on drug editing? 
 - What tasks to use from drug editing? And find corresponding data for those for training. 
 - How does the knowledge distillation training process work? 
