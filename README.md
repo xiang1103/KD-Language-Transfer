@@ -6,8 +6,8 @@ Given a scientific task and a teacher model(large LLM) that is capable at handli
 - Make any domain oriented (tasks that would benefit from good conversation capabilities) language model into more general yet still accurate language model 
 
 ### Methodology 
-Teacher Model: TBD   
-Student Model: TBD   
+Teacher Model:    
+Student Model:    
 
 ### Task Selection & Motivation: Drug Editing
 Our student model needs to be good at a specific task, and the selection of this task directs what the outcome of knowledge distillation is.  
@@ -33,8 +33,11 @@ The student model must possess a lot of specific domain knowledge to a specific 
 - Student Model: 
   
 ### Problems to Resolve: 
-- Which scientific task do we want the student model to have expertise in? 
-- How does the knowledge distillation training work? 
+- How to define language capabilitites and quantify we have improved? 
+    - Cross compare with existing LLMs like GPT with multiple rounds of conversation 
+- How to train the student model to perform well on drug editing? 
+- What tasks to use from drug editing? And find corresponding data for those for training. 
+- How does the knowledge distillation training process work? 
 
 
 ### Steps needed: 
@@ -47,6 +50,11 @@ The student model must possess a lot of specific domain knowledge to a specific 
 
 - [ ] Student Model search   
 - [ ] Teacher Model search  
+- [ ] Find suitable datasets 
+- [ ] Define drug editing tasks 
+- [ ] Train the student model to be good at the specific drug editing tasks 
+- [ ] Use knowledge distillation to improve model language abilities 
+- [ ] Testing with other models with metrics 
 ### References 
 - Look at Knowledge Distillation Papers (DDK, MiniLLM ...) to know the training techniques for knowledge distillation (loss function, training loader ...)
 - Look at different drug editing paper (RL Guider, ChemReasoner) to decide how to train a successful base student model 
