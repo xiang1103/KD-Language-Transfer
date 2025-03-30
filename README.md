@@ -1,7 +1,9 @@
 # Knowledge Distillation- experiment of idea on turning domain expert language model to domain and language expert LM 
 
 ### Goal  
-Given a scientific task and a teacher model(large LLM) that is capable at handling language but is not trained on scientific tasks (not a specialist), can we train/use a student model that is very good at this task and learn the language capabilities from the teacher model through knowledge distillation and still outperform the teacher model at the scientific task? 
+Given a scientific task and a teacher model(large LLM) that is capable at handling language but is not trained on scientific tasks (not a specialist), can we train/use a student model that is very good at this task and learn the language capabilities from the teacher model through knowledge distillation and still outperform the teacher model at the scientific task?  
+- Improving the performance of drug editing on Large Language Models by training a domain expert model then giving language capabilities through knowledge distillation 
+- Make any domain oriented language model into more general yet still accurate language model 
 
 ### Methodology 
 Teacher Model: TBD   
@@ -29,7 +31,8 @@ Our student model needs to be good at a specific task, and the selection of this
 
 
 ### Steps needed: 
-- [ ] Read the ACL paper to understand how to use Language Model on scientific tasks, and the different tasks we can potentially use for this project.   
+- [x] Read the ACL paper to understand how to use Language Model on scientific tasks, and the different tasks we can potentially use for this project.   
+- [ ] Select a task to handle 
 - [ ] Literature search: Find similar papers that used     
     - Knowledge Distillation to train student model to get language capabilities 
     - Specialist model at chemistry/material science/other kinds of scientific knowledge
