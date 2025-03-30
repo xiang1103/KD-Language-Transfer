@@ -5,6 +5,11 @@ Given a scientific task and a teacher model(large LLM) that is capable at handli
 - Improving the performance of drug editing on Large Language Models by training a domain expert model then giving language capabilities through knowledge distillation 
 - Make any domain oriented (tasks that would benefit from good conversation capabilities) language model into more general yet still accurate language model 
 
+### Problem Formulation 
+- Problem Statement: Traditionally, drug editing relies on feedback and prompting to get good results from existing LLMs. How can we train a student model that's an expert on certain drug editing tasks (such as making a molecule more soluble in water), and improve its language capabilities through Knowledge Distillation? 
+- Student Model Training: Decide a scientific task, input data from a dataset like ZINC, train the student model to be good at executing that task through loss functions like Cross Entropy. 
+- Knowledge Distillation Training: Study the training process of DDK paper, how to distill the language abilities to the student model?  
+
 ### Methodology 
 Teacher Model:    
 Student Model:  
