@@ -30,6 +30,8 @@ Our student model needs to be good at a specific task, and the selection of this
 - Our method does not dependent on an existing LLM (chatGPT, DeepSeek)'s ability to do drug editing (we also don't know their training data), because we can train a student model with our data and we can better evaluate its performance at drug editing before and after training, which is not something that other papers have done before. 
 - Most papers in drug editing involves prompting and feedback to a LLM, our method bypasses the prompting by directly training an expert student model, then let it have the conversation abilities through Knowledge Distillation. This part of training to have an expert model is not done before. **Our performance of drug editing is directly related to how much knowledge the student model has before and after knowledge distillation. It is not dependent on how good a pretrained LLM is or how good that LLM is at incorporating prompt feedback.**  
   
+### Our method vs. DDK 
+
 
 ### Choosing a Student Model (Open Source)   
 The student model must possess a lot of specific domain knowledge to a specific task (such as drug editing, or even more specifically--telling structural similarity, validity, etc.).   
