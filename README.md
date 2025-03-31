@@ -37,6 +37,7 @@ Our student model needs to be good at a specific task, and the selection of this
   
 ### Our method vs. DDK 
 
+### Our method vs. Finetuning Approaches 
 
 ### Choosing a Student Model (Open Source)   
 The student model must possess a lot of specific domain knowledge to a specific task (such as drug editing, or even more specifically--telling structural similarity, validity, etc.).   
@@ -58,7 +59,7 @@ The student model must possess a lot of specific domain knowledge to a specific 
 - How to define language capabilities and quantify we have improved? 
     - Cross compare with existing LLMs like GPT with multiple rounds of conversation 
     - Test reasoning capabilities: Chain of thought; give an answer and ask it to explain the process. 
-- How to train the student model to perform well on drug editing? 
+- How to train the student model to perform well on drug editing? And how to train this? 
 - Can knowledge distillation improve language capabilities? 
 - What tasks to use from drug editing? And find corresponding data for those for training. 
 - How does the knowledge distillation training process work? 
@@ -71,11 +72,10 @@ The student model must possess a lot of specific domain knowledge to a specific 
     - Knowledge Distillation to train student model to get language capabilities 
     - Specialist model at chemistry/material science/other kinds of scientific knowledge
     - Pre-trained models that are successful at doing specific tasks (ex: Chemformer, MolGPT). We might need these as the student model (No models found)
-
+- [ ] Select specific tasks from drug editing to use (start with ACL paper)
 - [ ] Student Model search   
 - [ ] Teacher Model search  
 - [ ] Find suitable datasets 
-- [ ] Define drug editing tasks 
 - [ ] Train the student model to be good at the specific drug editing tasks 
 - [ ] Use knowledge distillation to improve model language abilities 
 - [ ] Testing with other models with metrics   
