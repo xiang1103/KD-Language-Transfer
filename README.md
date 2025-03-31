@@ -36,6 +36,11 @@ Our student model needs to be good at a specific task, and the selection of this
 - Most papers in drug editing involves prompting and feedback to a LLM, our method bypasses the prompting by directly training an expert student model, then let it have the conversation abilities through Knowledge Distillation. This part of training to have an expert model is not done before. **Our performance of drug editing is directly related to how much knowledge the student model has before and after knowledge distillation. It is not dependent on how good a pretrained LLM is or how good that LLM is at incorporating prompt feedback.**  
   
 ### Our method vs. DDK 
+- DDK uses a large teacher model that has expertise (good performance) at various domains, and wants to train the student model to also have this performance. They do this by dynamically sampling the dataset so weaker tasks are trained more. It's meant to improve certain domain's that the teacher and student have gap in 
+- We have a student model that is good certain drug editing tasks, and we want to use knowledge distillation so that the student model gets better at languages such as at doing conversations. We are only trying to bridge the difference in language while maintaining performance. This is the part that DDK doesn't have, neither does other KD papers. 
+- Their distillation method gives data that needed to be trained more because the performance is not good. We need to quantify our language capabilities to know if we can even shuffle our training data. 
+- DDK trains on domain specific dataset, which we need to find. 
+- Overall, DDK's shuffling method might be useful, but our method is different from KD from the beginning. 
 
 ### Our method vs. Finetuning Approaches 
 
