@@ -67,7 +67,8 @@ The student model must possess a lot of specific domain knowledge to a specific 
 - How to train the student model to perform well on drug editing? And how to train this? 
 - Can knowledge distillation improve language capabilities? 
 - What tasks to use from drug editing? And find corresponding data for those for training. 
-- How does the knowledge distillation training process work? 
+- How does the knowledge distillation training process work?  
+- Exact training tasks within Drug Editing that is suited for training (needs language capabilities and a LLM can get good at)
 
 
 ### Steps needed: 
@@ -78,6 +79,8 @@ The student model must possess a lot of specific domain knowledge to a specific 
     - Specialist model at chemistry/material science/other kinds of scientific knowledge
     - Pre-trained models that are successful at doing specific tasks (ex: Chemformer, MolGPT). We might need these as the student model (No models found)
 - [ ] Select specific tasks from drug editing to use (start with ACL paper)
+- [ ] Literature review on Foundation Models approach 
+- [ ] Literature review on ChemReasoner 
 - [ ] Student Model search   
 - [ ] Teacher Model search  
 - [ ] Find suitable datasets 
