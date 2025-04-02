@@ -90,4 +90,24 @@ The student model must possess a lot of specific domain knowledge to a specific 
   
 ### References 
 - Look at Knowledge Distillation Papers (DDK, MiniLLM ...) to know the training techniques for knowledge distillation (loss function, training loader ...)
-- Look at different drug editing paper (RL Guider, ChemReasoner) to decide how to train a successful base student model 
+- Look at different drug editing paper (RL Guider, ChemReasoner) to decide how to train a successful base student model
+
+## Datasets
+
+### [ChemData700K](https://huggingface.co/datasets/AI4Chem/ChemData700K)
+- A large-scale instruction tuning dataset for chemistry.
+- Contains 700K high-quality QA pairs across 9 core chemistry tasks.
+
+
+---
+
+## Benchmarks
+
+### [ChemBench](https://github.com/lamalab-org/chembench)
+- A modular and extensible benchmark for evaluating LLMs and multimodal models on chemistry tasks.
+- Supports HuggingFace integration, system prompt customization, and automatic error handling.
+
+### [mol_opt](https://github.com/wenhao-gao/mol_opt)
+- A reproducible and sample-efficient benchmark for molecular optimization.
+- Covers 25 algorithms and 23 tasks, focusing on oracle call efficiency.
+
